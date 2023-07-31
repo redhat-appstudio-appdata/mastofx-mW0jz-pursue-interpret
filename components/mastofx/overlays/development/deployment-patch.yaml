@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: mastofx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhn-engineering-hrup-tenant/mastofx/mastofx@sha256:5843bbce57be86c325ebb5189a0c2a7528f31793f66bba1f2f0c6232e0884030
+        name: my-java-quarkus
+        resources: {}
+status: {}
